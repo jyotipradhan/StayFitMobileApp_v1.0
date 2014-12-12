@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Stay Fit</title>
+
+<!--javasript-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+<script lang="javascript" type="text/javascript">
+
+var date = new date();
+document.write(date);
+</script>
+
+<!--stylesheets-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.mobile.css">
+
+</head>
+
+<body>
+
+<!--Landing Page-->
+<section data-role="page" id = "home">
+<div data-role="header" data-position="fixed">
+<h1> Stay Fit Logo </h1>
+<a href="#navpanel" data-icon="bars" data-iconpos="notext">Menu</a>
+<a href="#logout" data-icon="power" data-iconpos="notext">Logout</a>
+</div> <!--header-->
+<article data-role="content">
+	<div role="main" class="ui-content">
+	        <h2 class="mc-text-center">Welcome!</h2>
+			<h3>Sign In</h3>
+	        <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+	            <label for="txt-password">Password</label>
+	            <input type="password" name="txt-password" id="txt-password" value="">
+	            <fieldset data-role="controlgroup">
+	                <input type="checkbox" name="chck-rememberme" id="chck-rememberme" checked="">
+	                <label for="chck-rememberme">Remember me</label>
+	            </fieldset>
+	            <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5" >Submit</a>
+            <p class="mc-top-margin-1-5"><a href="begin-password-reset.html">Can't access your account?</a></p>
+	            <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+	                <div role="main" class="ui-content">
+	                    <h3 class="mc-text-danger">Login Failed</h3>
+	                    <p>Did you enter the right credentials?</p>
+	                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+	                </div>
+	            </div>
+            <p class="mc-top-margin-1-5"><b>Don't have an account?</b></p>
+	            <a href="sign-up.html" class="ui-btn ui-btn-b ui-corner-all">Sign Up</a>
+	            <p></p>
+	        </div>
+</article><!--content-->
+<div data-role="footer" data-position="fixed">
+<h1>Copyrights &#169; 2014</h1>
+</div><!--footer-->
+<div data-role="panel" id = "navpanel" data-position-fixed="true" data-display="push" data-theme= "b" >
+<ul data-role="listview">
+<li data-icon="home" data-iconpos="right" ><a href="#" data-rel="">Home</a></li>
+<li data-icon="user" data-iconpos="right" ><a href="#">User Profile</a></li>
+<li data-icon="grid" data-iconpos="right"><a href="#">Activity Log</a></li>
+<li data-icon="info" data-iconpos="right"><a href="#help">Help</a></li>
+</ul>
+</div>
+</section><!--page-->
+
+<!--Sign Up Page-->
+<section data-role="page" id = "sign-in">
+<div data-role="header">
+Header
+</div> <!--header-->
+<article data-role="content">
+	 <div role="main" class="ui-content">
+            <h3>Sign In</h3>
+	        <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+	            <label for="txt-password">Password</label>
+	            <input type="password" name="txt-password" id="txt-password" value="">
+	            <fieldset data-role="controlgroup">
+	                <input type="checkbox" name="chck-rememberme" id="chck-rememberme" checked="">
+	                <label for="chck-rememberme">Remember me</label>
+	            </fieldset>
+	            <a href="#dlg-invalid-credentials" data-rel="popup" data-transition="pop" data-position-to="window" id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">Submit</a>
+            <p class="mc-top-margin-1-5"><a href="begin-password-reset.html">Can't access your account?</a></p>
+	            <div data-role="popup" id="dlg-invalid-credentials" data-dismissible="false" style="max-width:400px;">
+	                <div role="main" class="ui-content">
+	                    <h3 class="mc-text-danger">Login Failed</h3>
+	                    <p>Did you enter the right credentials?</p>
+	                    <div class="mc-text-center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">OK</a></div>
+	                </div>
+	            </div>
+	        </div><!-- /content -->
+</article><!--content-->
+<div data-role="footer">
+Footer
+</div><!--footer-->
+</section><!--page-->
+
+<!--Exercise Page-->
+<section data-role="page" id = "exercise-main">
+<div data-role="header" data-position="fixed">
+<h1> Stay Fit Logo </h1>
+<a href="#navpanel" data-icon="bars" data-iconpos="notext">Menu</a>
+<a href="#logout" data-icon="power" data-iconpos="notext">Logout</a>
+</div> <!--header-->
+<article data-role="content">
+	 <div role="main" class="ui-content" >
+            
+            <h1>Let's Excercise</h1>
+            
+            <ul data-role ="listview" data-inset="true" class="ui-alt-icon">
+            	<li><a href="#">Stretching</a></li>
+            	<li><a href="#">Breathing</a></li>
+            	<li><a href="#">Walking</a></li>
+            	<li><a href="#">Laughing</a></li>
+            </ul>
+	  </div><!-- /content -->
+</article><!--content-->
+<div data-role="footer" data-position="fixed">
+<h1>Copyrights &#169; 2014</h1>
+</div><!--footer-->
+<div data-role="panel" id = "navpanel" data-position-fixed="true" data-display="push" data-theme= "b" >
+<ul data-role="listview">
+<li data-icon="home" data-iconpos="right" ><a href="#exercise-main" data-rel="">Home</a></li>
+<li data-icon="user" data-iconpos="right" ><a href="#">User Profile</a></li>
+<li data-icon="grid" data-iconpos="right"><a href="#">Activity Log</a></li>
+<li data-icon="info" data-iconpos="right"><a href="#help">Help</a></li>
+</ul>
+</div>
+</section><!--page-->
+
+<!--Help Page-->
+<section data-role="page" id = "help">
+<div data-role="header" data-position="fixed">
+<h1> Stay Fit Logo </h1>
+<a href="#navpanel" data-icon="bars" data-iconpos="notext">Menu</a>
+<a href="#logout" data-icon="power" data-iconpos="notext">Logout</a>
+</div> <!--header-->
+<article data-role="content">
+ <div role="main" class="ui-content" >         
+ <ul data-role="listview" class="ui-listview-outer" data-inset="true">
+ <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>About StayFit</h2>
+    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false" >
+      <li>StayFit App is designed to inspire busy people to live a healthier and active life by performing small exercises. Your work schedule is our priority and we aim to provide a customizable time for you to exercise. Our reminders ensure that you live healthy by regular exercising. <br>
+
+      	According to preset reminders notify you to start working, all the while keeping in mind that the exercise are short and fit in your busy schedule. <br>
+
+		We believe that  contributions as small as stretch or smile go a long way in your good health.</li>
+      
+    </ul>
+  </li>
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Birds</h2>
+    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+      <li>Condor</li>
+      <li><a href="#">Eagle</a></li>
+      <li>Sparrow</li>
+    </ul>
+  </li>
+ 
+  <li data-role="collapsible" data-iconpos="right" data-shadow="false" data-corners="false">
+    <h2>Fish</h2>
+    <ul data-role="listview" data-shadow="false" data-inset="true" data-corners="false">
+      <li><a href="#">Salmon</a></li>
+      <li>Pollock</li>
+      <li>Trout</li>
+    </ul>
+  </li>
+ 
+</ul>
+	  </div><!-- /content -->
+</article><!--content-->
+<div data-role="footer" data-position="fixed">
+<h1>Copyrights &#169; 2014</h1>
+</div><!--footer-->
+<div data-role="panel" id = "navpanel" data-position-fixed="true" data-display="push" data-theme= "b" >
+<ul data-role="listview">
+<li data-icon="home" data-iconpos="right" ><a href="#exercise-main" data-rel="">Home</a></li>
+<li data-icon="user" data-iconpos="right" ><a href="#">User Profile</a></li>
+<li data-icon="grid" data-iconpos="right"><a href="#">Activity Log</a></li>
+<li data-icon="info" data-iconpos="right"><a href="#help">Help</a></li>
+</ul>
+</div>
+</section><!--page-->
+
+
+</body>
+
+<!--javascript-->
+<script src="js/script.js"></script>
+</html>
